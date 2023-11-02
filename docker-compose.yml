@@ -26,8 +26,8 @@ services:
       - RABBITMQ_DEFAULT_PASS=guest
   redis:
     image: "redis:alpine"
-
-# app image
+    
+    # app image
   vproapp:
     build:
       context: ./Docker-files/app
@@ -38,7 +38,7 @@ services:
     volumes:
       - vproappdata:/usr/local/tomcat/webapps
     
-# nginx
+ # nginx
 vproweb:
     build:
       context: ./Docker-files/web
