@@ -38,7 +38,7 @@ services:
     volumes:
       - vproappdata:/usr/local/tomcat/webapps
     
- # nginx
+ #nginx
 vproweb:
     build:
       context: ./Docker-files/web
